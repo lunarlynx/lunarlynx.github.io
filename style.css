@@ -1,3 +1,15 @@
+html, body {height: 100%; margin: 0; padding: 0; text-align: center; position: relative;}
+
+.wrap {
+  margin: -117px auto 0;
+  display: inline-block;
+  position: relative;
+  width: 268px;
+  height: 236px;
+  overflow: hidden;
+  top: 50%;
+}
+
 .foxy {
 	position: absolute;
 	top: 50px;
