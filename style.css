@@ -222,11 +222,21 @@ html, body {height: 100%; margin: 0; padding: 0; text-align: center; position: r
 	width: 100px;
 	height: 50px;
 	top: -149px;
-	transform: rotate(-13deg);
-	-webkit-transition: top 1s ease-out 0.5s;
-     -moz-transition: top 1s ease-out 0.5s;
-     -o-transition: top 1s ease-out 0.5s;
-     transition: top 1s ease-out 0.5s;
+	z-index: -1;
+	left: -40px;
+	transform: rotate(-13deg) scale(1, -1);;
+	animation-name: foxtail;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    transition: all25s ease-out;
+
+}
+	@keyframes foxtail {
+	30%	 {transform: scale(1, -1); transition: all 2.5s ease-out;}	
+	60%  {transform: scale(1, 1); transition: all 2.5s ease-out;}
+	100% {transform: rotate(-13deg) scale(1, 1); transition: all 2.5s ease-out;}
 }
 
 .fox-tail1, .fox-tail2, .fox-tail3, .fox-tail4, .fox-tail5 {
@@ -250,7 +260,19 @@ html, body {height: 100%; margin: 0; padding: 0; text-align: center; position: r
 	border-radius: 20px 2px;
 	top: -10px;
 	transform: skew(-57deg, 0deg);
+	animation-name: foxtail2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
 }
+
+/*@keyframes foxtail2 {
+    0%   {transform: skew(-49deg, 0deg) rotate(11deg);}
+    25%  {transform: skew(-52deg, 0deg) rotate(16deg);}
+    50%  {transform: skew(-63deg, 0deg) rotate(17deg);}
+    75%  {transform: skew(-41deg, 0deg) rotate(12deg);}
+    100% {transform: skew(-57deg, 0deg) rotate(0deg);}
+}*/
 
 .fox-tail3 {
 	width: 130px;
@@ -259,7 +281,19 @@ html, body {height: 100%; margin: 0; padding: 0; text-align: center; position: r
 	border-radius: 20px 2px;
 	top: -12px;
 	transform: skew(-49deg, -3deg);
+	animation-name: foxtail3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
 }
+
+/*@keyframes foxtail3 {
+    0%   {transform: skew(-62deg, 2deg);}
+    25%  {transform: skew(-62deg, 2deg) rotate(6deg);}
+    50%  {top: -18px;  transform: rotate(17deg) skew(77deg, 1deg); left: 0px;}
+    75%  {transform: rotate(24deg) skew(77deg, 1deg);}
+    100% {top: -12px; transform: skew(-49deg, -3deg); left: 21px;}
+}*/
 
 .fox-tail4 {
 	width: 112px;
@@ -268,7 +302,18 @@ html, body {height: 100%; margin: 0; padding: 0; text-align: center; position: r
 	border-radius: 20px 8px;
 	top: -21px;
 	transform: skew(-67deg, 1deg);
+	animation-name: foxtail4;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
+
+/*@keyframes foxtail4 {
+    0%   {transform: rotate(7deg) skew(-67deg, 1deg);}
+    25%  {transform: rotate(21deg) skew(-67deg, 1deg); top: -31px;}
+    50%  {transform: rotate(25deg) skew(-75deg, 1deg); height: 13px;}
+    75%  {transform: rotate(21deg) skew(-67deg, 1deg); top: -31px;}
+    100% {top: -21px; transform: skew(-67deg, 1deg); height: 16px;}
+}*/
 
 .fox-tail5 {
 	width: 80px;
@@ -277,7 +322,17 @@ html, body {height: 100%; margin: 0; padding: 0; text-align: center; position: r
 	top: -97px;
 	left: 108px;
 	background-color: #fff;
+	animation-name: foxtail5;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
 }
+
+/*@keyframes foxtail5 {
+    0%   {top: -100px; height: 46px;}
+    50%  {transform: rotate(26deg);}
+    100% {top: -97px; transform: rotate(0deg); height: 44px;}
+}*/
 
 .fox-tail6 {
 	position: relative;
