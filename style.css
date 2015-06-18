@@ -46,6 +46,9 @@ html, body {height: 100%; margin: 0; padding: 0; text-align: center; position: r
 	width: 43px;
 	height: 40px;
 	background-color: #E9B13B;
+	background-image:  gradient(linear,0 2,0 36,from(#B8A33E),to(#FC2));
+	background-image:  -o-gradient(linear,0 2,0 36,from(#B8A33E),to(#FC2));
+	background-image:  -moz-gradient(linear,0 2,0 36,from(#B8A33E),to(#FC2));
 	background-image: -webkit-gradient(linear,0 2,0 36,from(#B8A33E),to(#FC2));
 	border: 2px solid rgba(77, 0, 0, 1);
 	border-radius: 27px 14px;
@@ -67,6 +70,8 @@ html, body {height: 100%; margin: 0; padding: 0; text-align: center; position: r
     -webkit-transform: rotate(-300deg);
     -o-transform: rotate(-300deg);
     background-image: gradient(linear,0 2,0 36,from(#B8A33E),to(#FC2));
+    background-image: -o-gradient(linear,0 2,0 36,from(#B8A33E),to(#FC2));
+    background-image: -moz-gradient(linear,0 2,0 36,from(#B8A33E),to(#FC2));
 	background-image: -webkit-gradient(linear,0 2,0 36,from(#B8A33E),to(#FC2));
 
 }
@@ -77,6 +82,8 @@ html, body {height: 100%; margin: 0; padding: 0; text-align: center; position: r
 	position: relative;
 	opacity: 0.7;
 	background-image: gradient(linear,0 2,0 36,from(rgba(255,255,255,0.7)),to(rgba(255, 187, 44, 0.7)));
+	background-image: -o-gradient(linear,0 2,0 36,from(rgba(255,255,255,0.7)),to(rgba(255, 187, 44, 0.7)));
+	background-image: -moz-gradient(linear,0 2,0 36,from(rgba(255,255,255,0.7)),to(rgba(255, 187, 44, 0.7)));
 	background-image: -webkit-gradient(linear,0 2,0 36,from(rgba(255,255,255,0.7)),to(rgba(255, 187, 44, 0.7)));
 	border-radius: 30px;
 	top: 5px;
@@ -182,6 +189,8 @@ html, body {height: 100%; margin: 0; padding: 0; text-align: center; position: r
 	-ms-transform: rotate(126deg);
 	-webkit-transform: rotate(126deg);
 	background: gradient(linear,10 0,0 7,from(rgba(213, 202, 188, 0.7)),to(rgba(255, 95, 44, 0.82)));
+	background: -o-gradient(linear,10 0,0 7,from(rgba(213, 202, 188, 0.7)),to(rgba(255, 95, 44, 0.82)));
+	background: -moz-gradient(linear,10 0,0 7,from(rgba(213, 202, 188, 0.7)),to(rgba(255, 95, 44, 0.82)));
 	background: -webkit-gradient(linear,10 0,0 7,from(rgba(213, 202, 188, 0.7)),to(rgba(255, 95, 44, 0.82)));
 	z-index: 7;
 	left: -5px;
