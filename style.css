@@ -345,16 +345,60 @@ html, body {height: 100%; margin: 0; padding: 0; text-align: center; position: r
 }
 
 @-webkit-keyframes foxtail {
-	30%	 {transform: scale(1, -1); transition: all 2.5s ease-out;}	
+	30%	 {
+		transform: scale(1, -1); 
+		-o-transform: scale(1, -1);
+		-moz-transform: scale(1, -1);
+		-ms-transform: scale(1, -1);
+		-webkit-transform: scale(1, -1);
+		transition: all 2.5s ease-out;
+		-o-transition: all 2.5s ease-out;
+		-webkit-transition: all 2.5s ease-out;
+		-ms-transition: all 2.5s ease-out;
+		-moz-transition: all 2.5s ease-out;
+	}	
 }
 @keyframes foxtail {
-	30%	 {transform: scale(1, -1); transition: all 2.5s ease-out;}	
+	30%	 {
+		transform: scale(1, -1); 
+		-o-transform: scale(1, -1);
+		-moz-transform: scale(1, -1);
+		-ms-transform: scale(1, -1);
+		-webkit-transform: scale(1, -1);
+		transition: all 2.5s ease-out;
+		-o-transition: all 2.5s ease-out;
+		-webkit-transition: all 2.5s ease-out;
+		-ms-transition: all 2.5s ease-out;
+		-moz-transition: all 2.5s ease-out;
+	}	
 }
 @-o-keyframes foxtail {
-	30%	 {transform: scale(1, -1); transition: all 2.5s ease-out;}	
+	30%	 {
+		transform: scale(1, -1); 
+		-o-transform: scale(1, -1);
+		-moz-transform: scale(1, -1);
+		-ms-transform: scale(1, -1);
+		-webkit-transform: scale(1, -1);
+		transition: all 2.5s ease-out;
+		-o-transition: all 2.5s ease-out;
+		-webkit-transition: all 2.5s ease-out;
+		-ms-transition: all 2.5s ease-out;
+		-moz-transition: all 2.5s ease-out;
+	}	
 }
 @-moz-keyframes foxtail {
-	30%	 {transform: scale(1, -1); transition: all 2.5s ease-out;}	
+	30%	 {
+		transform: scale(1, -1); 
+		-o-transform: scale(1, -1);
+		-moz-transform: scale(1, -1);
+		-ms-transform: scale(1, -1);
+		-webkit-transform: scale(1, -1);
+		transition: all 2.5s ease-out;
+		-o-transition: all 2.5s ease-out;
+		-webkit-transition: all 2.5s ease-out;
+		-ms-transition: all 2.5s ease-out;
+		-moz-transition: all 2.5s ease-out;
+	}	
 }
 
 
