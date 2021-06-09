@@ -1,512 +1,565 @@
-html, body {height: 100%; margin: 0; padding: 0; text-align: center; position: relative;}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
 
 .wrap {
-  margin: 0px auto 0;
-  display: inline-block;
-  position: relative;
-  width: 268px;
-  height: 236px;
-  top: 50%;
+    display: inline-block;
+    position: relative;
+    width: 268px;
+    height: 236px;
+    top: 50%;
+    margin: -118px auto 0;
 }
 
 .foxy {
-	position: absolute;
-	top: 50px;
-	left: 100px;
-	height: 100px;
-	width: 100px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    height: 100px;
+    width: 100px;
 }
 
-.foxy:hover .c-eyes{
-	left: 8px;
+.foxy:hover .c-eyes {
+    left: 8px;
 }
 
 .foxy:hover .ce2 {
-	left: 3px;
-	top: 6px;
+    left: 3px;
+    top: 6px;
 }
 
-.foxy:hover .eye-line{
-	left: 7px;
-	top: 6px;
+.foxy:hover .eye-line {
+    left: 7px;
+    top: 6px;
 }
 
-.foxy:hover .el2{
-	left: 8px;
-	top: 7px;
+.foxy:hover .el2 {
+    left: 8px;
+    top: 7px;
 }
 
 
 .foxyLactive .fox-tail {
-	top: 0;
+    top: 0;
 }
 
 .eyes {
-	position: relative;
-	width: 43px;
-	height: 40px;
-	background-color: #E9B13B;
-	background-image:  gradient(linear,0 2,0 36,from(#B8A33E),to(#FC2));
-	background-image:  -o-gradient(linear,0 2,0 36,from(#B8A33E),to(#FC2));
-	background-image:  -moz-gradient(linear,0 2,0 36,from(#B8A33E),to(#FC2));
-	background-image: -webkit-gradient(linear,0 2,0 36,from(#B8A33E),to(#FC2));
-	border: 2px solid rgba(77, 0, 0, 1);
-	border-radius: 27px 14px;
-	transform: rotate(-10deg);
-	-moz-transform: rotate(-10deg);
+    position: relative;
+    width: 43px;
+    height: 40px;
+    background-color: #E9B13B;
+    background-image: gradient(linear, 0 2, 0 36, from(#B8A33E), to(#FC2));
+    background-image: -o-gradient(linear, 0 2, 0 36, from(#B8A33E), to(#FC2));
+    background-image: -moz-gradient(linear, 0 2, 0 36, from(#B8A33E), to(#FC2));
+    background-image: -webkit-gradient(linear, 0 2, 0 36, from(#B8A33E), to(#FC2));
+    border: 2px solid rgba(77, 0, 0, 1);
+    border-radius: 27px 14px;
+    transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
     -ms-transform: rotate(-10deg);
     -webkit-transform: rotate(-10deg);
     -o-transform: rotate(-10deg);
-	z-index: 5;
-	background-clip: padding-box;
+    z-index: 5;
+    background-clip: padding-box;
 }
 
 .e2 {
-	top: -35px;
-	left: -60px;
-	transform: rotate(-300deg);
-	-moz-transform: rotate(-300deg);
+    top: -35px;
+    left: -60px;
+    transform: rotate(-300deg);
+    -moz-transform: rotate(-300deg);
     -ms-transform: rotate(-300deg);
     -webkit-transform: rotate(-300deg);
     -o-transform: rotate(-300deg);
-    background-image: gradient(linear,0 2,0 36,from(#B8A33E),to(#FC2));
-    background-image: -o-gradient(linear,0 2,0 36,from(#B8A33E),to(#FC2));
-    background-image: -moz-gradient(linear,0 2,0 36,from(#B8A33E),to(#FC2));
-	background-image: -webkit-gradient(linear,0 2,0 36,from(#B8A33E),to(#FC2));
+    background-image: gradient(linear, 0 2, 0 36, from(#B8A33E), to(#FC2));
+    background-image: -o-gradient(linear, 0 2, 0 36, from(#B8A33E), to(#FC2));
+    background-image: -moz-gradient(linear, 0 2, 0 36, from(#B8A33E), to(#FC2));
+    background-image: -webkit-gradient(linear, 0 2, 0 36, from(#B8A33E), to(#FC2));
 
 }
 
 .c-eyes {
-	width: 30px;
-	height: 30px;
-	position: relative;
-	opacity: 0.7;
-	background-image: gradient(linear,0 2,0 36,from(rgba(255,255,255,0.7)),to(rgba(255, 187, 44, 0.7)));
-	background-image: -o-gradient(linear,0 2,0 36,from(rgba(255,255,255,0.7)),to(rgba(255, 187, 44, 0.7)));
-	background-image: -moz-gradient(linear,0 2,0 36,from(rgba(255,255,255,0.7)),to(rgba(255, 187, 44, 0.7)));
-	background-image: -webkit-gradient(linear,0 2,0 36,from(rgba(255,255,255,0.7)),to(rgba(255, 187, 44, 0.7)));
-	border-radius: 30px;
-	top: 5px;
-	left: 1px;
-	z-index: 6;
-	transition: all .1s ease-out;
-	-moz-transition: all .1s ease-out;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    opacity: 0.7;
+    background-image: gradient(linear, 0 2, 0 36, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 187, 44, 0.7)));
+    background-image: -o-gradient(linear, 0 2, 0 36, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 187, 44, 0.7)));
+    background-image: -moz-gradient(linear, 0 2, 0 36, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 187, 44, 0.7)));
+    background-image: -webkit-gradient(linear, 0 2, 0 36, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 187, 44, 0.7)));
+    border-radius: 30px;
+    top: 5px;
+    left: 1px;
+    z-index: 6;
+    transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
     -ms-transition: all .1s ease-out;
     -webkit-transition: all .1s ease-out;
     -o-transition: all .1s ease-out;
 }
 
 .ce2 {
-	top: 10px;
-	left: 0px;
+    top: 10px;
+    left: 0;
 }
 
 .eye-line {
-	width: 15px;
-	height: 15px;
-	background-color: rgba(0,0,0,.7);
-	position: relative;
-	border-radius: 20px 6px;
-	transform: rotate(74deg);
-	-moz-transform: rotate(74deg);
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, .7);
+    position: relative;
+    border-radius: 20px 6px;
+    transform: rotate(74deg);
+    -moz-transform: rotate(74deg);
     -ms-transform: rotate(74deg);
     -webkit-transform: rotate(74deg);
     -o-transform: rotate(74deg);
-	top: 12px;
-	left: 5px;
-	-webkit-box-shadow: -1px -2px 3px hsla(0,0%,100%,1);
-	-moz-box-shadow: -1px -2px 3px hsla(0,0%,100%,1);
-	-o-box-shadow: -1px -2px 3px hsla(0,0%,100%,1);
-	box-shadow: -1px -2px 3px hsla(0,0%,100%,1);
-	z-index: 7;
+    top: 12px;
+    left: 5px;
+    -webkit-box-shadow: -1px -2px 3px hsla(0, 0%, 100%, 1);
+    -moz-box-shadow: -1px -2px 3px hsla(0, 0%, 100%, 1);
+    -o-box-shadow: -1px -2px 3px hsla(0, 0%, 100%, 1);
+    box-shadow: -1px -2px 3px hsla(0, 0%, 100%, 1);
+    z-index: 7;
 }
 
 .el2 {
-	transform: rotate(142deg);
-	-moz-transform:rotate(142deg);
+    transform: rotate(142deg);
+    -moz-transform: rotate(142deg);
     -ms-transform: rotate(142deg);
     -webkit-transform: rotate(142deg);
     -o-transform: rotate(142deg);
-	left: 2px;
-	top: 7px;
+    left: 2px;
+    top: 7px;
 }
 
 .fox-hear {
-	position: absolute;
-	top: -6px;
-	left: -79px;
-	background-color: #000;
-	width: 100px;
-	height: 50px;
-	transform: skew(10deg,20deg);
-	-moz-transform: skew(10deg,20deg);
-    -ms-transform: skew(10deg,20deg);
-    -webkit-transform: skew(10deg,20deg);
-    -o-transform: skew(10deg,20deg);
-	border-radius: 10px;
-	border-left: 3px solid rgba(173, 173, 173, 0.85);
+    position: absolute;
+    top: -6px;
+    left: -79px;
+    background-color: #000;
+    width: 100px;
+    height: 50px;
+    transform: skew(10deg, 20deg);
+    -moz-transform: skew(10deg, 20deg);
+    -ms-transform: skew(10deg, 20deg);
+    -webkit-transform: skew(10deg, 20deg);
+    -o-transform: skew(10deg, 20deg);
+    border-radius: 10px;
+    border-left: 3px solid rgba(173, 173, 173, 0.85);
 }
 
 .fh2 {
-	transform: skew(12deg,-31deg) rotate(-15deg);
-	-o-transform: skew(12deg,-31deg) rotate(-15deg);
-	-webkit-transform: skew(12deg,-31deg) rotate(-15deg);
-	-ms-transform: skew(12deg,-31deg) rotate(-15deg);
-	-moz-transform: skew(12deg,-31deg) rotate(-15deg);
-	top: 5px;
-	left: -38px;
-	border-right: 2px solid rgba(173, 173, 173, 0.85);
+    transform: skew(12deg, -31deg) rotate(-15deg);
+    -o-transform: skew(12deg, -31deg) rotate(-15deg);
+    -webkit-transform: skew(12deg, -31deg) rotate(-15deg);
+    -ms-transform: skew(12deg, -31deg) rotate(-15deg);
+    -moz-transform: skew(12deg, -31deg) rotate(-15deg);
+    top: 5px;
+    left: -38px;
+    border-right: 2px solid rgba(173, 173, 173, 0.85);
 }
 
 .fox-face {
-	width: 118px;
-	height: 111px;
-	position: absolute;
-	top: -26px;
-	left: -64px;
-	background-color: #000;
-	border-radius: 74px 6px;
-	border: 1px solid #000;
-	transform: rotate(40deg);
-	-o-transform: rotate(40deg);
-	-moz-transform: rotate(40deg);
-	-webkit-transform: rotate(40deg);
-	-ms-transform: rotate(40deg);
-	z-index: 2;
+    width: 118px;
+    height: 111px;
+    position: absolute;
+    top: -26px;
+    left: -64px;
+    background-color: #000;
+    border-radius: 74px 6px;
+    border: 1px solid #000;
+    transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    z-index: 2;
 }
 
 
 .fox-nos {
-	position: relative;
-	width: 10px;
-	height: 10px;
-	background-color: rgba(145, 122, 122, 0.76);
-	top: -40px;
-	border-radius: 5px 10px;
-	transform: rotate(126deg);
-	-o-transform: rotate(126deg);
-	-moz-transform: rotate(126deg);
-	-ms-transform: rotate(126deg);
-	-webkit-transform: rotate(126deg);
-	background: gradient(linear,10 0,0 7,from(rgba(213, 202, 188, 0.7)),to(rgba(255, 95, 44, 0.82)));
-	background: -o-gradient(linear,10 0,0 7,from(rgba(213, 202, 188, 0.7)),to(rgba(255, 95, 44, 0.82)));
-	background: -moz-gradient(linear,10 0,0 7,from(rgba(213, 202, 188, 0.7)),to(rgba(255, 95, 44, 0.82)));
-	background: -webkit-gradient(linear,10 0,0 7,from(rgba(213, 202, 188, 0.7)),to(rgba(255, 95, 44, 0.82)));
-	z-index: 7;
-	left: -5px;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(145, 122, 122, 0.76);
+    top: -40px;
+    border-radius: 5px 10px;
+    transform: rotate(126deg);
+    -o-transform: rotate(126deg);
+    -moz-transform: rotate(126deg);
+    -ms-transform: rotate(126deg);
+    -webkit-transform: rotate(126deg);
+    background: gradient(linear, 10 0, 0 7, from(rgba(213, 202, 188, 0.7)), to(rgba(255, 95, 44, 0.82)));
+    background: -o-gradient(linear, 10 0, 0 7, from(rgba(213, 202, 188, 0.7)), to(rgba(255, 95, 44, 0.82)));
+    background: -moz-gradient(linear, 10 0, 0 7, from(rgba(213, 202, 188, 0.7)), to(rgba(255, 95, 44, 0.82)));
+    background: -webkit-gradient(linear, 10 0, 0 7, from(rgba(213, 202, 188, 0.7)), to(rgba(255, 95, 44, 0.82)));
+    z-index: 7;
+    left: -5px;
 }
 
 .fox-nos1, .fox-nos2, .fox-nos3 {
-	background-color: #000;
-	width: 10px;
-	height: 10px;
-	position: relative;
-	border-radius: 10px;
+    background-color: #000;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    border-radius: 10px;
 }
 
 .fox-nos1 {
-	top: 4px;
-	left: -5px;
+    top: 4px;
+    left: -5px;
 }
 
 .fox-nos2 {
-	top: -18px;
+    top: -18px;
 }
 
 .fox-nos3 {
-	top: -19px;
-	left: 8px;
+    top: -19px;
+    left: 8px;
 }
 
 .fox-nos4 {
-	position: relative;
-	background-color: #000;
-	width: 1px;
-	height: 4px;
-	top: -28px;
-	left: 6px;
-	transform: rotate(52deg);
-	-o-transform: rotate(52deg);
-	-webkit-transform: rotate(52deg);
-	-moz-transform: rotate(52deg);
-	-ms-transform: rotate(52deg);
+    position: relative;
+    background-color: #000;
+    width: 1px;
+    height: 4px;
+    top: -28px;
+    left: 6px;
+    transform: rotate(52deg);
+    -o-transform: rotate(52deg);
+    -webkit-transform: rotate(52deg);
+    -moz-transform: rotate(52deg);
+    -ms-transform: rotate(52deg);
 }
 
 .fox-mouth {
-	width: 102px;
-	height: 100px;
-	background-color: #fff;
-	border-radius: 7px 9px;
-	transform: rotate(33deg);
-	-o-transform: rotate(33deg);
-	-webkit-transform: rotate(33deg);
-	-ms-transform: rotate(33deg);
-	-moz-transform: rotate(33deg);
-	position: relative;
-	top: -98px;
-	left: -46px;
-	border: 1px solid #000;
-	z-index: 1;
-	}
+    width: 102px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 7px 9px;
+    transform: rotate(33deg);
+    -o-transform: rotate(33deg);
+    -webkit-transform: rotate(33deg);
+    -ms-transform: rotate(33deg);
+    -moz-transform: rotate(33deg);
+    position: relative;
+    top: -98px;
+    left: -46px;
+    border: 1px solid #000;
+    z-index: 1;
+}
 
 .fox-mouth-back {
-	width: 102px;
-	height: 100px;
-	background-color: #fff;
-	border-radius: 7px 9px;
-	transform: rotate(33deg);
-	-o-transform: rotate(33deg);
-	-webkit-transform: rotate(33deg);
-	-ms-transform: rotate(33deg);
-	-moz-transform: rotate(33deg);
-	position: relative;
-	top: -98px;
-	left: -46px;
-	border: 1px solid #000;
-	z-index: 2;
-	}
+    width: 102px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 7px 9px;
+    transform: rotate(33deg);
+    -o-transform: rotate(33deg);
+    -webkit-transform: rotate(33deg);
+    -ms-transform: rotate(33deg);
+    -moz-transform: rotate(33deg);
+    position: relative;
+    top: -98px;
+    left: -46px;
+    border: 1px solid #000;
+    z-index: 2;
+}
 
 .fox-body {
-	position: relative;
-	background-color: #000;
-	width: 200px;
-	height: 150px;
-	border-radius: 100px;
-	top: -85px;
-	left: -99px;
-	border-bottom: 3px solid #6F6B6B;
-	animation-name: bodydance;
+    position: relative;
+    background-color: #000;
+    width: 200px;
+    height: 150px;
+    border-radius: 100px;
+    top: -85px;
+    left: -99px;
+    border-bottom: 3px solid #6F6B6B;
+    animation-name: bodydance;
     animation-duration: .8s;
     animation-iteration-count: infinite;
     animation-delay: 0s;
     animation-timing-function: ease-in;
-	    -o-animation-name: bodydance;
-	    -o-animation-duration: .8s;
-	    -o-animation-iteration-count: infinite;
-	    -o-animation-delay: 0s;
-	    -o-animation-timing-function: ease-in;
-	-moz-animation-name: bodydance;
+    -o-animation-name: bodydance;
+    -o-animation-duration: .8s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-delay: 0s;
+    -o-animation-timing-function: ease-in;
+    -moz-animation-name: bodydance;
     -moz-animation-duration: .8s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-delay: 0s;
     -moz-animation-timing-function: ease-in;
-	    -webkit-animation-name: bodydance;
-	    -webkit-animation-duration: .8s;
-	    -webkit-animation-iteration-count: infinite;
-	    -webkit-animation-delay: 0s;
-	    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-name: bodydance;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-timing-function: ease-in;
 }
 
 @keyframes bodydance {
-	50%	 {top: -81px; left: -95px;}	
-	80%  {top: -85px; left: -101px;}
-	100%  {top: -81px; left: -99px;}
+    50% {
+        top: -81px;
+        left: -95px;
+    }
+    80% {
+        top: -85px;
+        left: -101px;
+    }
+    100% {
+        top: -81px;
+        left: -99px;
+    }
 }
+
 @-o-keyframes bodydance {
-	50%	 {top: -81px; left: -95px;}	
-	80%  {top: -85px; left: -101px;}
-	100%  {top: -81px; left: -99px;}
+    50% {
+        top: -81px;
+        left: -95px;
+    }
+    80% {
+        top: -85px;
+        left: -101px;
+    }
+    100% {
+        top: -81px;
+        left: -99px;
+    }
 }
+
 @-webkit-keyframes bodydance {
-	50%	 {top: -81px; left: -95px;}	
-	80%  {top: -85px; left: -101px;}
-	100%  {top: -81px; left: -99px;}
+    50% {
+        top: -81px;
+        left: -95px;
+    }
+    80% {
+        top: -85px;
+        left: -101px;
+    }
+    100% {
+        top: -81px;
+        left: -99px;
+    }
 }
+
 @-moz-keyframes bodydance {
-	50%	 {top: -81px; left: -95px;}	
-	80%  {top: -85px; left: -101px;}
-	100%  {top: -81px; left: -99px;}
+    50% {
+        top: -81px;
+        left: -95px;
+    }
+    80% {
+        top: -85px;
+        left: -101px;
+    }
+    100% {
+        top: -81px;
+        left: -99px;
+    }
 }
 
 .fox-tail {
-	position: relative;
-	background-color: #000;
-	width: 100px;
-	height: 50px;
-	top: -149px;
-	z-index: -1;
-	left: -40px;
-	transform: rotate(-13deg) scale(1, -1);
-	-o-transform: rotate(-13deg) scale(1, -1);
-	-moz-transform: rotate(-13deg) scale(1, -1);
-	-webkit-transform: rotate(-13deg) scale(1, -1);
-	-ms-transform: rotate(-13deg) scale(1, -1);
-	animation-name: foxtail;
+    position: relative;
+    background-color: #000;
+    width: 100px;
+    height: 50px;
+    top: -149px;
+    z-index: -1;
+    left: -40px;
+    transform: rotate(-13deg) scale(1, -1);
+    -o-transform: rotate(-13deg) scale(1, -1);
+    -moz-transform: rotate(-13deg) scale(1, -1);
+    -webkit-transform: rotate(-13deg) scale(1, -1);
+    -ms-transform: rotate(-13deg) scale(1, -1);
+    animation-name: foxtail;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-delay: 0s;
     animation-timing-function: ease-in;
-    	-o-animation-name: foxtail;
-	    -o-animation-duration: 1s;
-	    -o-animation-iteration-count: infinite;
-	    -o-animation-delay: 0s;
-	    -o-animation-timing-function: ease-in;
-	-moz-animation-name: foxtail;
+    -o-animation-name: foxtail;
+    -o-animation-duration: 1s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-delay: 0s;
+    -o-animation-timing-function: ease-in;
+    -moz-animation-name: foxtail;
     -moz-animation-duration: 1s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-delay: 0s;
     -moz-animation-timing-function: ease-in;
-	   	-webkit-animation-name: foxtail;
-	    -webkit-animation-duration: 1s;
-	    -webkit-animation-iteration-count: infinite;
-	    -webkit-animation-delay: 0s;
-	    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-name: foxtail;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-timing-function: ease-in;
 }
 
 @-webkit-keyframes foxtail {
-	30%	 {
-		transform: scale(1, -1); 
-		-webkit-transform: scale(1, -1);
-		transition: all 2.5s ease-out;
-		-webkit-transition: all 2.5s ease-out;
-		}	
+    30% {
+        transform: scale(1, -1);
+        -webkit-transform: scale(1, -1);
+        transition: all 2.5s ease-out;
+        -webkit-transition: all 2.5s ease-out;
+    }
 }
+
 @keyframes foxtail {
-	30%	 {
-		transform: scale(1, -1); 
-		-o-transform: scale(1, -1);
-		-moz-transform: scale(1, -1);
-		-ms-transform: scale(1, -1);
-		-webkit-transform: scale(1, -1);
-		transition: all 2.5s ease-out;
-		-o-transition: all 2.5s ease-out;
-		-webkit-transition: all 2.5s ease-out;
-		-ms-transition: all 2.5s ease-out;
-		-moz-transition: all 2.5s ease-out;
-	}	
+    30% {
+        transform: scale(1, -1);
+        -o-transform: scale(1, -1);
+        -moz-transform: scale(1, -1);
+        -ms-transform: scale(1, -1);
+        -webkit-transform: scale(1, -1);
+        transition: all 2.5s ease-out;
+        -o-transition: all 2.5s ease-out;
+        -webkit-transition: all 2.5s ease-out;
+        -ms-transition: all 2.5s ease-out;
+        -moz-transition: all 2.5s ease-out;
+    }
 }
+
 @-o-keyframes foxtail {
-	30%	 {
-		transform: scale(1, -1); 
-		-o-transform: scale(1, -1);
-		transition: all 2.5s ease-out;
-		-o-transition: all 2.5s ease-out;
-	}	
+    30% {
+        transform: scale(1, -1);
+        -o-transform: scale(1, -1);
+        transition: all 2.5s ease-out;
+        -o-transition: all 2.5s ease-out;
+    }
 }
+
 @-moz-keyframes foxtail {
-	30%	 {
-		
-	}	
+    30% {
+
+    }
 }
 
 
 .fox-tail1, .fox-tail2, .fox-tail3, .fox-tail4, .fox-tail5 {
-	position: relative;
-	background-color: #000;
+    position: relative;
+    background-color: #000;
 }
 
 .fox-tail1 {
-	width: 115px;
-	height: 17px;
-	left: 20px;
-	transform: skew(-65deg, 1deg);
-	-o-transform: skew(-65deg, 1deg);
-	-moz-transform: skew(-65deg, 1deg);
-	-ms-transform: skew(-65deg, 1deg);
-	-webkit-transform: skew(-65deg, 1deg);
+    width: 115px;
+    height: 17px;
+    left: 20px;
+    transform: skew(-65deg, 1deg);
+    -o-transform: skew(-65deg, 1deg);
+    -moz-transform: skew(-65deg, 1deg);
+    -ms-transform: skew(-65deg, 1deg);
+    -webkit-transform: skew(-65deg, 1deg);
 
 }
 
 .fox-tail2 {
-	width: 147px;
-	height: 22px;
-	left: 20px;
-	border-radius: 20px 2px;
-	top: -10px;
-	transform: skew(-57deg, 0deg);
-	-o-transform: skew(-57deg, 0deg);
-	-moz-transform: skew(-57deg, 0deg);
-	-webkit-transform: skew(-57deg, 0deg);
-	-ms-transform: skew(-57deg, 0deg);
+    width: 147px;
+    height: 22px;
+    left: 20px;
+    border-radius: 20px 2px;
+    top: -10px;
+    transform: skew(-57deg, 0deg);
+    -o-transform: skew(-57deg, 0deg);
+    -moz-transform: skew(-57deg, 0deg);
+    -webkit-transform: skew(-57deg, 0deg);
+    -ms-transform: skew(-57deg, 0deg);
 
 }
 
 .fox-tail3 {
-	width: 130px;
-	height: 15px;
-	left: 21px;
-	border-radius: 20px 2px;
-	top: -12px;
-	transform: skew(-49deg, -3deg);
-	-o-transform: skew(-49deg, -3deg);
-	-moz-transform: skew(-49deg, -3deg);
-	-webkit-transform: skew(-49deg, -3deg);
-	-ms-transform: skew(-49deg, -3deg);
+    width: 130px;
+    height: 15px;
+    left: 21px;
+    border-radius: 20px 2px;
+    top: -12px;
+    transform: skew(-49deg, -3deg);
+    -o-transform: skew(-49deg, -3deg);
+    -moz-transform: skew(-49deg, -3deg);
+    -webkit-transform: skew(-49deg, -3deg);
+    -ms-transform: skew(-49deg, -3deg);
 }
 
 .fox-tail4 {
-	width: 112px;
-	height: 16px;
-	left: 20px;
-	border-radius: 20px 8px;
-	top: -21px;
-	transform: skew(-67deg, 1deg);
-	-o-transform: skew(-67deg, 1deg);
-	-moz-transform: skew(-67deg, 1deg);
-	-webkit-transform: skew(-67deg, 1deg);
-	-ms-transform: skew(-67deg, 1deg);
+    width: 112px;
+    height: 16px;
+    left: 20px;
+    border-radius: 20px 8px;
+    top: -21px;
+    transform: skew(-67deg, 1deg);
+    -o-transform: skew(-67deg, 1deg);
+    -moz-transform: skew(-67deg, 1deg);
+    -webkit-transform: skew(-67deg, 1deg);
+    -ms-transform: skew(-67deg, 1deg);
 }
 
 .fox-tail5 {
-	width: 80px;
-	height: 44px;
-	border-radius: 50px;
-	top: -97px;
-	left: 108px;
-	background-color: #fff;
+    width: 80px;
+    height: 44px;
+    border-radius: 50px;
+    top: -97px;
+    left: 108px;
+    background-color: #fff;
 }
 
 .fox-tail6 {
-	position: relative;
-	height: 25px;
-	width: 2px;
-	background: #fff;
-	top: -134px;
-	left: 108px;
-	border-radius: 6px;
-	transform: rotate(17deg) skew(2deg,107deg);
-	-o-transform: rotate(17deg) skew(2deg,107deg);
-	-moz-transform: rotate(17deg) skew(2deg,107deg);
-	-webkit-transform: rotate(17deg) skew(2deg,107deg);
-	-ms-transform: rotate(17deg) skew(2deg,107deg);
+    position: relative;
+    height: 25px;
+    width: 2px;
+    background: #fff;
+    top: -134px;
+    left: 108px;
+    border-radius: 6px;
+    transform: rotate(17deg) skew(2deg, 107deg);
+    -o-transform: rotate(17deg) skew(2deg, 107deg);
+    -moz-transform: rotate(17deg) skew(2deg, 107deg);
+    -webkit-transform: rotate(17deg) skew(2deg, 107deg);
+    -ms-transform: rotate(17deg) skew(2deg, 107deg);
 }
 
 .fox-eye-close {
-	opacity: 0;
-	height: 18px;
-	width: 53px;
-	position: absolute;
-	background-color: #000;
-	z-index: 100;
-	border-radius: 10px 20px;
-	border-bottom: 1px solid #fff;
-	z-index: 100;
-	transition: all .2s ease-out;
-	-o-transition: all .2s ease-out;
-	-webkit-transition: all .2s ease-out;
-	-moz-transition: all .2s ease-out;
-	-ms-transition: all .2s ease-out;
+    opacity: 0;
+    height: 18px;
+    width: 43px;
+    position: absolute;
+    background-color: #000;
+    z-index: 100;
+    border-radius: 10px 20px;
+    border-bottom: 3px solid #3b3b3b;
+    transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
 }
 
 .eyes .fox-eye-close {
-	transform: rotate(-27deg);
-	-o-transform: rotate(-27deg);
-	-webkit-transform: rotate(-27deg);
-	-ms-transform: rotate(-27deg);
-	-moz-transform: rotate(-27deg);
-	top: -8px;
-	left: -18px;
+    transform: rotate(-43deg);
+    -o-transform: rotate(-43deg);
+    -webkit-transform: rotate(-43deg);
+    -ms-transform: rotate(-43deg);
+    -moz-transform: rotate(-43deg);
+    top: -8px;
+    left: -12px;
 }
 
 .eyes .e2 .fox-eye-close {
-	left: -20px;
+    left: -20px;
 }
 
 .foxy:active .fox-eye-close {
-	opacity: 1;
-	transition: all .2s ease-out;
-	-o-transition: all .2s ease-out;
-	-moz-transition: all .2s ease-out;
-	-ms-transition: all .2s ease-out;
-	-webkit-transition: all .2s ease-out;
+    opacity: 1;
+    transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+}
+
+.text {
+	position: absolute;
+	color: #6F6B6B;
+	font-family: monospace;
 }
